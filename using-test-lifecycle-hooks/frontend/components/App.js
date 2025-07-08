@@ -12,7 +12,7 @@ export default function App() {
 	const submit = (evt) => {
 		evt.preventDefault();
 		setForm(getInitialForm);
-		setInfo(`Success! ${form.user} likes ${form.food}`);
+		setInfo(`Success! ${form.user} likes ${form.favFood}`);
 	};
 
 	return (
@@ -31,7 +31,7 @@ export default function App() {
 				name="favFood"
 				data-testid="fav-food"
 			>
-				<option>-- select favorite food --</option>
+				<option>-- Select Favorite Food --</option>
 				<option>Pizza</option>
 				<option>Broccoli</option>
 			</select>
